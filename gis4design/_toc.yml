@@ -1,8 +1,21 @@
 # Table of content
 # Learn more at https://jupyterbook.org/customize/toc.html
-#
-- file: intro
-- file: content
-  sections:
-    - file: markdown
-    - file: notebooks
+- file: docs/intro
+  numbered: true
+
+- part: Concepts
+  chapters:
+    - file: docs/010/010gis
+    - file: docs/010/011crs
+- part: Workflows
+  chapters:
+    - file: docs/020/020workflow1
+- part: Tasks
+  chapters:
+    - file: docs/030/030task1
+    - file: docs/030/031task2
+      sections:
+        - file: docs/030/031task21
+        - file: docs/030/031task22
+    - file: docs/030/032task3
+    - file: docs/030/033task4
