@@ -114,10 +114,98 @@
  </span>
 </p>
 <ul class="nav sidenav_l1">
- <li class="toctree-l1">
+ <li class="toctree-l1 collapsible-parent">
   <a class="reference internal" href="../020/020workflow1.html">
-   1. The Philadelphia Workflow
+   1. Site Analysis- UPenn
   </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../020/020workflow11.html">
+     1.1. Location Map
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../020/020workflow12.html">
+     1.2. Projecting the Maps: From Lat/Lon to Metres
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../020/020workflow13.html">
+     1.3. Land Use Map
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../020/020workflow14.html">
+     1.4. Filtering and Inquiries Attributes of Vector Layers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../020/020workflow15.html">
+     1.5. Search for Surface Temperature Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../020/020workflow16.html">
+     1.6. Import Surface Temperature Data into QGIS
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../020/020workflow17.html">
+     1.7. Search for Digital Elevation Model (DEM) - Topography of the Site
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../020/020workflow18.html">
+     1.8. Search for Building Footprint
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../020/020workflow19.html">
+     1.9. Search for LiDAR information - Assuming the Building Footprint Data has no Height Information
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../020/020workflow110.html">
+     1.10. Import Raster Layer (DEM &amp; Surface Temperature) into Rhino
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../020/020workflow111.html">
+     1.11. Import Vector (Shapefiles) into Rhino
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../020/020workflow112.html">
+     1.12. Extrude Building Footprint Based on DEM and LiDAR Point Cloud
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../020/021workflow2.html">
+   2. Site Analysis - Singapore
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../020/021workflow21.html">
+     2.1. Location Map
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../020/021workflow22.html">
+     2.2. Site Map
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../020/021workflow23.html">
+     2.3. Land Use Map
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
  </li>
 </ul>
 <p class="caption collapsible-parent">
@@ -390,62 +478,62 @@
 <li><p>Before starting this task, please refer to <a class="reference internal" href="031task21.html"><span class="doc">Singapore Master Plan</span></a> &amp; <a class="reference internal" href="032task3.html"><span class="doc">Import Shapefile into QGIS</span></a> tasks. You will require materials and knowledge from these two tasks to complete this task.</p></li>
 <li><p>Import the “Master Plan 2014 Land Use” shapefile . Right click on the layer and choose set CRS -&gt; Set Layer CRS</p>
 <p><br/><br/></p>
-<a class="reference internal image-reference" href="../../_images/img128.png"><img alt="../../_images/img128.png" class="align-center" src="../../_images/img128.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../../_images/img147.png"><img alt="../../_images/img147.png" class="align-center" src="../../_images/img147.png" style="width: 100%;" /></a>
 <p><br/><br/></p>
 </li>
 <li><p>Singapore uses the SVY21 CRS. Search for SVY21 and choose the SVY21/ Singapore TM EPSG: 3414. While you click on the CRS, you will be able to see the extent the CRS covers.</p>
 <p><br/><br/></p>
-<a class="reference internal image-reference" href="../../_images/img225.png"><img alt="../../_images/img225.png" class="align-center" src="../../_images/img225.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../../_images/img237.png"><img alt="../../_images/img237.png" class="align-center" src="../../_images/img237.png" style="width: 100%;" /></a>
 <p><br/><br/></p>
 </li>
 <li><p>Set the CRS for the whole project by clicking the CRS symbol at the bottom right of window. The project CRS sets the CRS for the canvas. This will not affect the CRS of the individual layers. It is best to unify the CRS for the project and the layers to ensure that all layers are at their right position. When different CRS are used between different layers, maps will not be able to coincide with each other.</p>
 <p><br/><br/></p>
-<a class="reference internal image-reference" href="../../_images/img324.png"><img alt="../../_images/img324.png" class="align-center" src="../../_images/img324.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../../_images/img336.png"><img alt="../../_images/img336.png" class="align-center" src="../../_images/img336.png" style="width: 100%;" /></a>
 <p><br/><br/></p>
 </li>
 <li><p>Once you click the symbol the CRS System Selector will pop out. Search for SVY21/ Singapore TM EPSG: 3414 and choose the CRS.</p>
 <p><br/><br/></p>
-<a class="reference internal image-reference" href="../../_images/img416.png"><img alt="../../_images/img416.png" class="align-center" src="../../_images/img416.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../../_images/img426.png"><img alt="../../_images/img426.png" class="align-center" src="../../_images/img426.png" style="width: 100%;" /></a>
 <p><br/><br/></p>
 </li>
 <li><p>Both the layer CRS and project CRS are set.</p>
 <p><br/><br/></p>
-<a class="reference internal image-reference" href="../../_images/img514.png"><img alt="../../_images/img514.png" class="align-center" src="../../_images/img514.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../../_images/img522.png"><img alt="../../_images/img522.png" class="align-center" src="../../_images/img522.png" style="width: 100%;" /></a>
 <p><br/><br/></p>
 </li>
 <li><p>Next we will demonstrate how the map will warped when different CRS is used for the project and layer CRS. We changed the project CRS to epsg: 5850. As a result, the map is distorted as shown.</p>
 <p><br/><br/></p>
-<a class="reference internal image-reference" href="../../_images/img68.png"><img alt="../../_images/img68.png" class="align-center" src="../../_images/img68.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../../_images/img616.png"><img alt="../../_images/img616.png" class="align-center" src="../../_images/img616.png" style="width: 100%;" /></a>
 <p><br/><br/></p>
 </li>
 <li><p>We revert back to the right CRS SVY21.</p>
 <p><br/><br/></p>
-<a class="reference internal image-reference" href="../../_images/img75.png"><img alt="../../_images/img75.png" class="align-center" src="../../_images/img75.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../../_images/img712.png"><img alt="../../_images/img712.png" class="align-center" src="../../_images/img712.png" style="width: 100%;" /></a>
 <p><br/><br/></p>
 </li>
 <li><p>We import another shapefile, the “Master Plan 2014 Building”.</p>
 <p><br/><br/></p>
-<a class="reference internal image-reference" href="../../_images/img83.png"><img alt="../../_images/img83.png" class="align-center" src="../../_images/img83.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../../_images/img86.png"><img alt="../../_images/img86.png" class="align-center" src="../../_images/img86.png" style="width: 100%;" /></a>
 <p><br/><br/></p>
 </li>
 <li><p>Turn off the “G_MP14_LAND_USE_PL” layer. You will see the building footprints of the “G_MP14_BLDG_PL” layer.</p>
 <p><br/><br/></p>
-<a class="reference internal image-reference" href="../../_images/img92.png"><img alt="../../_images/img92.png" class="align-center" src="../../_images/img92.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../../_images/img95.png"><img alt="../../_images/img95.png" class="align-center" src="../../_images/img95.png" style="width: 100%;" /></a>
 <p><br/><br/></p>
 </li>
 <li><p>Next change the CRS of the “G_MP14_BLDG_PL” layer. Choose epsg: 5850. The footprints will disappear.</p>
 <p><br/><br/></p>
-<a class="reference internal image-reference" href="../../_images/img101.png"><img alt="../../_images/img101.png" class="align-center" src="../../_images/img101.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../../_images/img102.png"><img alt="../../_images/img102.png" class="align-center" src="../../_images/img102.png" style="width: 100%;" /></a>
 <p><br/><br/></p>
 </li>
 <li><p>Right click on the “G_MP14_BLDG_PL” layer and click zoom to layer. The PCS distorted the building footprints so much, that it is not possible to see the footprints.</p>
 <p><br/><br/></p>
-<a class="reference internal image-reference" href="../../_images/img1110.png"><img alt="../../_images/img1110.png" class="align-center" src="../../_images/img1110.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../../_images/img1111.png"><img alt="../../_images/img1111.png" class="align-center" src="../../_images/img1111.png" style="width: 100%;" /></a>
 <p><br/><br/></p>
 </li>
 <li><p>Revert back to the right CRS for the “G_MP14_BLDG_PL” layer. You will be able to see the footprints again. Always remember to standardised your project and layer CRS. So as to be able to see all your data.</p>
 <p><br/><br/></p>
-<a class="reference internal image-reference" href="../../_images/img129.png"><img alt="../../_images/img129.png" class="align-center" src="../../_images/img129.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../../_images/img1210.png"><img alt="../../_images/img1210.png" class="align-center" src="../../_images/img1210.png" style="width: 100%;" /></a>
 <p><br/><br/></p>
 </li>
 </ol>

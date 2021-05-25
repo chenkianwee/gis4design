@@ -10,6 +10,24 @@
 - part: Workflows
   chapters:
     - file: docs/020/020workflow1
+      sections:
+        - file: docs/020/020workflow11
+        - file: docs/020/020workflow12
+        - file: docs/020/020workflow13
+        - file: docs/020/020workflow14
+        - file: docs/020/020workflow15
+        - file: docs/020/020workflow16
+        - file: docs/020/020workflow17
+        - file: docs/020/020workflow18
+        - file: docs/020/020workflow19
+        - file: docs/020/020workflow110
+        - file: docs/020/020workflow111
+        - file: docs/020/020workflow112
+    - file: docs/020/021workflow2
+      sections:
+        - file: docs/020/021workflow21
+        - file: docs/020/021workflow22
+        - file: docs/020/021workflow23
 - part: Tasks
   chapters:
     - file: docs/030/030task1
