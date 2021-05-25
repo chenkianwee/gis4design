@@ -114,10 +114,98 @@
  </span>
 </p>
 <ul class="nav sidenav_l1">
- <li class="toctree-l1">
+ <li class="toctree-l1 collapsible-parent">
   <a class="reference internal" href="../020/020workflow1.html">
-   1. The Philadelphia Workflow
+   1. Site Analysis- UPenn
   </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../020/020workflow11.html">
+     1.1. Location Map
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../020/020workflow12.html">
+     1.2. Projecting the Maps: From Lat/Lon to Metres
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../020/020workflow13.html">
+     1.3. Land Use Map
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../020/020workflow14.html">
+     1.4. Filtering and Inquiries Attributes of Vector Layers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../020/020workflow15.html">
+     1.5. Search for Surface Temperature Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../020/020workflow16.html">
+     1.6. Import Surface Temperature Data into QGIS
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../020/020workflow17.html">
+     1.7. Search for Digital Elevation Model (DEM) - Topography of the Site
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../020/020workflow18.html">
+     1.8. Search for Building Footprint
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../020/020workflow19.html">
+     1.9. Search for LiDAR information - Assuming the Building Footprint Data has no Height Information
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../020/020workflow110.html">
+     1.10. Import Raster Layer (DEM &amp; Surface Temperature) into Rhino
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../020/020workflow111.html">
+     1.11. Import Vector (Shapefiles) into Rhino
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../020/020workflow112.html">
+     1.12. Extrude Building Footprint Based on DEM and LiDAR Point Cloud
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../020/021workflow2.html">
+   2. Site Analysis - Singapore
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../020/021workflow21.html">
+     2.1. Location Map
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../020/021workflow22.html">
+     2.2. Site Map
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../020/021workflow23.html">
+     2.3. Land Use Map
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
  </li>
 </ul>
 <p class="caption collapsible-parent">
@@ -388,52 +476,52 @@
 <ol>
 <li><p>Install the CoordTransform plugin. Go to Plugins -&gt; Manage and Install Plugins …</p>
 <p><br/><br/></p>
-<a class="reference internal image-reference" href="../../_images/img130.png"><img alt="../../_images/img130.png" class="align-center" src="../../_images/img130.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../../_images/img148.png"><img alt="../../_images/img148.png" class="align-center" src="../../_images/img148.png" style="width: 100%;" /></a>
 <p><br/><br/></p>
 </li>
 <li><p>Install CoordTransform.</p>
 <p><br/><br/></p>
-<a class="reference internal image-reference" href="../../_images/img226.png"><img alt="../../_images/img226.png" class="align-center" src="../../_images/img226.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../../_images/img238.png"><img alt="../../_images/img238.png" class="align-center" src="../../_images/img238.png" style="width: 100%;" /></a>
 <p><br/><br/></p>
 </li>
 <li><p>After installation, go to Plugins -&gt; d2gis -&gt; CoordTransform</p>
 <p><br/><br/></p>
-<a class="reference internal image-reference" href="../../_images/img325.png"><img alt="../../_images/img325.png" class="align-center" src="../../_images/img325.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../../_images/img337.png"><img alt="../../_images/img337.png" class="align-center" src="../../_images/img337.png" style="width: 100%;" /></a>
 <p><br/><br/></p>
 </li>
 <li><p>The Coordtransform plugin interface.</p>
 <p><br/><br/></p>
-<a class="reference internal image-reference" href="../../_images/img417.png"><img alt="../../_images/img417.png" class="align-center" src="../../_images/img417.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../../_images/img427.png"><img alt="../../_images/img427.png" class="align-center" src="../../_images/img427.png" style="width: 100%;" /></a>
 <p><br/><br/></p>
 </li>
 <li><p>Obtain the lat/long of the point of interest. Go to Google Map and search for your site. Click on the map to obtain the lat/long.</p>
 <p><br/><br/></p>
-<a class="reference internal image-reference" href="../../_images/img515.png"><img alt="../../_images/img515.png" class="align-center" src="../../_images/img515.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../../_images/img523.png"><img alt="../../_images/img523.png" class="align-center" src="../../_images/img523.png" style="width: 100%;" /></a>
 <p><br/><br/></p>
 </li>
 <li><p>Copy the lat/long.</p>
 <p><br/><br/></p>
-<a class="reference internal image-reference" href="../../_images/img69.png"><img alt="../../_images/img69.png" class="align-center" src="../../_images/img69.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../../_images/img617.png"><img alt="../../_images/img617.png" class="align-center" src="../../_images/img617.png" style="width: 100%;" /></a>
 <p><br/><br/></p>
 </li>
 <li><p>Input the longitude into the X-input, and latitude into the Y-input in the Coordtransform interface. The CRS epsg used for google map is 4326 and we want the output CRS to be 3414. Click transform once these inputs are inserted.</p>
 <p><br/><br/></p>
-<a class="reference internal image-reference" href="../../_images/img76.png"><img alt="../../_images/img76.png" class="align-center" src="../../_images/img76.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../../_images/img713.png"><img alt="../../_images/img713.png" class="align-center" src="../../_images/img713.png" style="width: 100%;" /></a>
 <p><br/><br/></p>
 </li>
 <li><p>Copy the new transformed coordinates.</p>
 <p><br/><br/></p>
-<a class="reference internal image-reference" href="../../_images/img84.png"><img alt="../../_images/img84.png" class="align-center" src="../../_images/img84.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../../_images/img87.png"><img alt="../../_images/img87.png" class="align-center" src="../../_images/img87.png" style="width: 100%;" /></a>
 <p><br/><br/></p>
 </li>
 <li><p>Paste it into the coordinates parameter at the bottom of the window to zoom to the position.</p>
 <p><br/><br/></p>
-<a class="reference internal image-reference" href="../../_images/img93.png"><img alt="../../_images/img93.png" class="align-center" src="../../_images/img93.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../../_images/img96.png"><img alt="../../_images/img96.png" class="align-center" src="../../_images/img96.png" style="width: 100%;" /></a>
 <p><br/><br/></p>
 </li>
 <li><p>Adjust the scale (1: 10,000) to zoom into the point of interest.</p>
 <p><br/><br/></p>
-<a class="reference internal image-reference" href="../../_images/img102.png"><img alt="../../_images/img102.png" class="align-center" src="../../_images/img102.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../../_images/img103.png"><img alt="../../_images/img103.png" class="align-center" src="../../_images/img103.png" style="width: 100%;" /></a>
 <p><br/><br/></p>
 </li>
 </ol>
