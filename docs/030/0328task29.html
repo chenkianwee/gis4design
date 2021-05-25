@@ -1,0 +1,461 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>29. Polygonise Raster Image &#8212; Geographic Information System for Design</title>
+    
+  <link rel="stylesheet" href="../../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.3da636dd464baa7582d2.js">
+
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="30. Export Raster to XYZ file" href="0329task30.html" />
+    <link rel="prev" title="28. Reprojecting Files" href="0327task28.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../index.html">
+  
+  
+  <h1 class="site-logo" id="site-title">Geographic Information System for Design</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   INTRODUCTION
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Concepts
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../010/010gis.html">
+   1. What is Geographic Information System (GIS)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../010/011crs.html">
+   2. Understanding CRS, GCS and PCS
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Workflows
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../020/020workflow1.html">
+   1. The Philadelphia Workflow
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Tasks
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="030task1.html">
+   1. Loading Google Map as Base Map
+  </a>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="031task2.html">
+   2. Search for Open Geospatial Data
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="031task21.html">
+     2.1. Singapore Master Plan
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="031task22.html">
+     2.2. Obtain Philadelphia Land Use
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="032task3.html">
+   3. Import Shapefile into QGIS
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="033task4.html">
+   4. Setting CRS, GRS or PCS
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="034task5.html">
+   5. Zoom to Specified Long/Lat with CoordTransform Plugin
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="035task6.html">
+   6. Merge Multiple Features Using Dissolve
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="036task7.html">
+   7. Save a Feature Layer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="037task8.html">
+   8. Change the Colour and Opacity of a Polygon Feature Layer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="038task9.html">
+   9. Export Map as Image
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="039task10.html">
+   10. Drawing in QGIS
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="0310task11.html">
+   11. Create Attribute
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="0311task12.html">
+   12. Delete Attribute
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="0312task13.html">
+   13. Turn on Snapping
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="0313task14.html">
+   14. Change the Fill of a Polyline Feature
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="0314task15.html">
+   15. Label Features
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="0315task16.html">
+   16. Clip Feature Layer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="0316task17.html">
+   17. Categorise Polygon Feature Layer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="0317task18.html">
+   18. Layout Manager
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="0318task19.html">
+   19. Clip Raster
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="0319task20.html">
+   20. Zoom to Specific Lat/Lon
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="0320task21.html">
+   21. Adjust Transparency of Google Map Layer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="0321task22.html">
+   22. Draw Polygon with Advanced CAD Tool
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="0322task23.html">
+   23. Calculate Centroid
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="0323task24.html">
+   24. Draw a Circle/Square with Buffer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="0324task25.html">
+   25. Turn off Invalid Features Filtering Option for the Clip Operation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="0325task26.html">
+   26. Import Raster Layer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="0326task27.html">
+   27. Categorise Raster Image Layer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="0327task28.html">
+   28. Reprojecting Files
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   29. Polygonise Raster Image
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="0329task30.html">
+   30. Export Raster to XYZ file
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="0330task31.html">
+   31. Merge Point Clouds in Cloud Compare
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/docs/030/0328task29.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/chenkianwee/gis4design"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/chenkianwee/gis4design/issues/new?title=Issue%20on%20page%20%2Fdocs/030/0328task29.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="polygonise-raster-image">
+<h1><span class="section-number">29. </span>Polygonise Raster Image<a class="headerlink" href="#polygonise-raster-image" title="Permalink to this headline">¶</a></h1>
+<ol>
+<li><p>Go to Raster -&gt; Conversion -&gt; Polygonize (Raster to Vector)</p>
+<p><br/><br/></p>
+<a class="reference internal image-reference" href="../../_images/img124.png"><img alt="../../_images/img124.png" class="align-center" src="../../_images/img124.png" style="width: 100%;" /></a>
+<p><br/><br/></p>
+</li>
+<li><p>Choose the input layer that you want to polygonise. Choose which band to convert to an attribute in the polygon layer. Choose the name of the attribute. Click on Run.</p>
+<p><br/><br/></p>
+<a class="reference internal image-reference" href="../../_images/img221.png"><img alt="../../_images/img221.png" class="align-center" src="../../_images/img221.png" style="width: 100%;" /></a>
+<p><br/><br/></p>
+</li>
+<li><p>A polygon layer will be generated with the attribute name you have specified.</p>
+<p><br/><br/></p>
+<a class="reference internal image-reference" href="../../_images/img320.png"><img alt="../../_images/img320.png" class="align-center" src="../../_images/img320.png" style="width: 100%;" /></a>
+<p><br/><br/></p>
+</li>
+</ol>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./docs\030"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="0327task28.html" title="previous page"><span class="section-number">28. </span>Reprojecting Files</a>
+    <a class='right-next' id="next-link" href="0329task30.html" title="next page"><span class="section-number">30. </span>Export Raster to XYZ file</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Kian Wee Chen<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../../_static/js/index.3da636dd464baa7582d2.js"></script>
+
+
+    
+  </body>
+</html>
