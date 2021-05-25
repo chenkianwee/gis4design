@@ -1,4 +1,4 @@
-# Site Analysis- UPenn
+# Site Analysis- University of Pennsylvania
 
 This chapter lists out the mappings required for performing site analysis. We have only listed 12 mapping exercises. The list is not comprehensive. The 12 mapping exercises allow us to demonstrate most of the tasks required for site analysis.
 
