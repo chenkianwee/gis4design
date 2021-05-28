@@ -116,7 +116,7 @@
 <ul class="current nav sidenav_l1">
  <li class="toctree-l1 current active collapsible-parent">
   <a class="reference internal" href="020workflow1.html">
-   1. Site Analysis- UPenn
+   1. Site Analysis- University of Pennsylvania
   </a>
   <ul class="current collapse-ul">
    <li class="toctree-l2">
@@ -185,7 +185,7 @@
  </li>
  <li class="toctree-l1 collapsible-parent">
   <a class="reference internal" href="021workflow2.html">
-   2. Site Analysis - Singapore
+   2. Site Analysis - National University of Singapore
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
@@ -474,7 +474,7 @@
   <div class="section" id="search-for-lidar-information-assuming-the-building-footprint-data-has-no-height-information">
 <h1><span class="section-number">1.9. </span>Search for LiDAR information - Assuming the Building Footprint Data has no Height Information<a class="headerlink" href="#search-for-lidar-information-assuming-the-building-footprint-data-has-no-height-information" title="Permalink to this headline">¶</a></h1>
 <ol>
-<li><p>Go to https://viewer.nationalmap.gov/basic/. Search for “university of pennsylvania” at the map window. Then at the dataset window click on Elevation Source Data (3DEP) - Lidar IfSAR -&gt; Lidar Point Cloud (LPC). Click on “Find Products”.</p>
+<li><p>Go to <a href="https://viewer.nationalmap.gov/basic/" target="_blank">nationalmap</a>. Search for “university of pennsylvania” at the map window. Then at the dataset window click on Elevation Source Data (3DEP) - Lidar IfSAR -&gt; Lidar Point Cloud (LPC). Click on “Find Products”.</p>
 <p><br/><br/></p>
 <a class="reference internal image-reference" href="../../_images/img112.png"><img alt="../../_images/img112.png" class="align-center" src="../../_images/img112.png" style="width: 100%;" /></a>
 <p><br/><br/></p>
@@ -485,14 +485,27 @@ Published Date:  2017-03-28. Click on “Download LAZ”.</p>
 <a class="reference internal image-reference" href="../../_images/img29.png"><img alt="../../_images/img29.png" class="align-center" src="../../_images/img29.png" style="width: 100%;" /></a>
 <p><br/><br/></p>
 </li>
-<li><p>Once downloaded, unzip the file.</p>
+<li><p>When you click on the link you will be directed to a ftp site. As chrome is no longer able to open ftp site downloads. We will have to access the ftp folder through our windows file explorer. Copy and paste this path onto your windows explorer address bar.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ftp</span><span class="p">:</span><span class="o">//</span><span class="n">rockyftp</span><span class="o">.</span><span class="n">cr</span><span class="o">.</span><span class="n">usgs</span><span class="o">.</span><span class="n">gov</span><span class="o">/</span><span class="n">vdelivery</span><span class="o">/</span><span class="n">Datasets</span><span class="o">/</span><span class="n">Staged</span><span class="o">/</span><span class="n">Elevation</span><span class="o">/</span><span class="n">LPC</span><span class="o">/</span><span class="n">Projects</span><span class="o">/</span><span class="n">USGS_LPC_DE_DelawareValley_HD_2015_LAS_2017</span><span class="o">/</span><span class="n">laz</span><span class="o">/</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../../_images/img3a.png"><img alt="../../_images/img3a.png" class="align-center" src="../../_images/img3a.png" style="width: 100%;" /></a>
 <p><br/><br/></p>
-<a class="reference internal image-reference" href="../../_images/img39.png"><img alt="../../_images/img39.png" class="align-center" src="../../_images/img39.png" style="width: 100%;" /></a>
+<p><strong>a.</strong> In the explorer window search for this file ‘18SVK483422’</p>
 <p><br/><br/></p>
+<a class="reference internal image-reference" href="../../_images/img3b.png"><img alt="../../_images/img3b.png" class="align-center" src="../../_images/img3b.png" style="width: 100%;" /></a>
+<p><br/><br/></p>
+<p><strong>b.</strong> Copy and paste the file into your local directory.
+<br/><br/></p>
+<p><strong>c.</strong> If you are unable to get the FTP to work. You can download the file for this workflow with this <a href="https://drive.google.com/file/d/1q6N8GHRpKfkh0C-b8StVtc8x2OvZDuL-/view?usp=sharing" target="_blank">link</a>.
+<br/><br/></p>
 </li>
 <li><p>Open the file in Cloud Compare.</p>
 <p><br/><br/></p>
 <a class="reference internal image-reference" href="../../_images/img47.png"><img alt="../../_images/img47.png" class="align-center" src="../../_images/img47.png" style="width: 100%;" /></a>
+<p><br/><br/></p>
+<p><strong>a.</strong> When ask to shift the coordinates, click No.</p>
+<a class="reference internal image-reference" href="../../_images/img4a.png"><img alt="../../_images/img4a.png" class="align-center" src="../../_images/img4a.png" style="width: 100%;" /></a>
 <p><br/><br/></p>
 </li>
 <li><p>Click on the point cloud layer at the DB Tree Window to make it the active layer. Then go to Edit -&gt; Subsample.</p>
@@ -502,12 +515,12 @@ Published Date:  2017-03-28. Click on “Download LAZ”.</p>
 </li>
 <li><p>In the Cloud sub sampling window, choose the “Space” method. In the min. space between points to 5. This means that the density of the point clouds will be reduce to a 5m resolution. Click “OK”.</p>
 <p><br/><br/></p>
-<a class="reference internal image-reference" href="../../_images/img66.png"><img alt="../../_images/img66.png" class="align-center" src="../../_images/img66.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../../_images/img65.png"><img alt="../../_images/img65.png" class="align-center" src="../../_images/img65.png" style="width: 100%;" /></a>
 <p><br/><br/></p>
 </li>
 <li><p>Once done, the density of the point cloud will be reduced.</p>
 <p><br/><br/></p>
-<a class="reference internal image-reference" href="../../_images/img75.png"><img alt="../../_images/img75.png" class="align-center" src="../../_images/img75.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../../_images/img74.png"><img alt="../../_images/img74.png" class="align-center" src="../../_images/img74.png" style="width: 100%;" /></a>
 <p><br/><br/></p>
 </li>
 <li><p>Click on the subsampled point cloud layer. Click on the Save icon. In the Save file window choose “E57 cloud (*.e57)” from the drop down list. e57 is a file format that can be imported into Rhino. Press “Save”.</p>

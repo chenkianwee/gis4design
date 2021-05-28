@@ -11,7 +11,7 @@
 
 2. Lets reproject the raster image to the right CRS ({doc}`../030/0327task28`).
 
-3. Clip the raster image to only show the our extent of interest ({doc}`../030/0318task19`). Use the circle drawn in the exercise "Land Use Map" Step 15 ({doc}`../030/0314task15`) to clip it.
+3. Clip the raster image to only show the our extent of interest ({doc}`../030/0318task19`). Use the circle drawn in the exercise "{doc}`020workflow13`" Step 15 to clip it.
 
     <br/><br/>
     ```{image} ../../_static/020workflow16/img2.png
