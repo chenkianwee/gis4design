@@ -7,7 +7,7 @@
   chapters:
     - file: docs/010/010gis
     - file: docs/010/011crs
-- part: Workflows
+- part: Tasks
   chapters:
     - file: docs/020/020workflow1
       sections:
@@ -28,7 +28,7 @@
         - file: docs/020/021workflow21
         - file: docs/020/021workflow22
         - file: docs/020/021workflow23
-- part: Tasks
+- part: Sub-Tasks
   chapters:
     - file: docs/030/030task1
     - file: docs/030/031task2
