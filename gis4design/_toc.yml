@@ -1,66 +1,67 @@
-# Table of content
-# Learn more at https://jupyterbook.org/customize/toc.html
-- file: docs/intro
+format: jb-book
+root: docs/intro
+parts:
+- caption: Concepts
   numbered: true
-
-- part: Concepts
   chapters:
-    - file: docs/010/010gis
-    - file: docs/010/011crs
-- part: Tasks
+  - file: docs/010/010gis
+  - file: docs/010/011crs
+- caption: Tasks
+  numbered: true
   chapters:
-    - file: docs/020/020workflow1
-      sections:
-        - file: docs/020/020workflow11
-        - file: docs/020/020workflow12
-        - file: docs/020/020workflow13
-        - file: docs/020/020workflow14
-        - file: docs/020/020workflow15
-        - file: docs/020/020workflow16
-        - file: docs/020/020workflow17
-        - file: docs/020/020workflow18
-        - file: docs/020/020workflow19
-        - file: docs/020/020workflow110
-        - file: docs/020/020workflow111
-        - file: docs/020/020workflow112
-    - file: docs/020/021workflow2
-      sections:
-        - file: docs/020/021workflow21
-        - file: docs/020/021workflow22
-        - file: docs/020/021workflow23
-- part: Sub-Tasks
+  - file: docs/020/020workflow1
+    sections:
+    - file: docs/020/020workflow11
+    - file: docs/020/020workflow12
+    - file: docs/020/020workflow13
+    - file: docs/020/020workflow14
+    - file: docs/020/020workflow15
+    - file: docs/020/020workflow16
+    - file: docs/020/020workflow17
+    - file: docs/020/020workflow18
+    - file: docs/020/020workflow19
+    - file: docs/020/020workflow110
+    - file: docs/020/020workflow111
+    - file: docs/020/020workflow112
+  - file: docs/020/021workflow2
+    sections:
+    - file: docs/020/021workflow21
+    - file: docs/020/021workflow22
+    - file: docs/020/021workflow23
+- caption: Sub-Tasks
+  numbered: true
   chapters:
-    - file: docs/030/030task1
-    - file: docs/030/031task2
-      sections:
-        - file: docs/030/031task21
-        - file: docs/030/031task22
-    - file: docs/030/032task3
-    - file: docs/030/033task4
-    - file: docs/030/034task5
-    - file: docs/030/035task6
-    - file: docs/030/036task7
-    - file: docs/030/037task8
-    - file: docs/030/038task9
-    - file: docs/030/039task10
-    - file: docs/030/0310task11
-    - file: docs/030/0311task12
-    - file: docs/030/0312task13
-    - file: docs/030/0313task14
-    - file: docs/030/0314task15
-    - file: docs/030/0315task16
-    - file: docs/030/0316task17
-    - file: docs/030/0317task18
-    - file: docs/030/0318task19
-    - file: docs/030/0319task20
-    - file: docs/030/0320task21
-    - file: docs/030/0321task22
-    - file: docs/030/0322task23
-    - file: docs/030/0323task24
-    - file: docs/030/0324task25
-    - file: docs/030/0325task26
-    - file: docs/030/0326task27
-    - file: docs/030/0327task28
-    - file: docs/030/0328task29
-    - file: docs/030/0329task30
-    - file: docs/030/0330task31
+  - file: docs/030/030task1
+  - file: docs/030/031task2
+    sections:
+    - file: docs/030/031task21
+    - file: docs/030/031task22
+  - file: docs/030/032task3
+  - file: docs/030/033task4
+  - file: docs/030/034task5
+  - file: docs/030/035task6
+  - file: docs/030/036task7
+  - file: docs/030/037task8
+  - file: docs/030/038task9
+  - file: docs/030/039task10
+  - file: docs/030/0310task11
+  - file: docs/030/0311task12
+  - file: docs/030/0312task13
+  - file: docs/030/0313task14
+  - file: docs/030/0314task15
+  - file: docs/030/0315task16
+  - file: docs/030/0316task17
+  - file: docs/030/0317task18
+  - file: docs/030/0318task19
+  - file: docs/030/0319task20
+  - file: docs/030/0320task21
+  - file: docs/030/0321task22
+  - file: docs/030/0322task23
+  - file: docs/030/0323task24
+  - file: docs/030/0324task25
+  - file: docs/030/0325task26
+  - file: docs/030/0326task27
+  - file: docs/030/0327task28
+  - file: docs/030/0328task29
+  - file: docs/030/0329task30
+  - file: docs/030/0330task31
