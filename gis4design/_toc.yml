@@ -4,64 +4,71 @@ parts:
 - caption: Concepts
   numbered: true
   chapters:
-  - file: docs/010/010gis
-  - file: docs/010/011crs
+  - file: docs/01/01gis
+  - file: docs/01/02crs
 - caption: Tasks
   numbered: true
   chapters:
-  - file: docs/020/020workflow1
+  - file: docs/02/01workflow1
     sections:
-    - file: docs/020/020workflow11
-    - file: docs/020/020workflow12
-    - file: docs/020/020workflow13
-    - file: docs/020/020workflow14
-    - file: docs/020/020workflow15
-    - file: docs/020/020workflow16
-    - file: docs/020/020workflow17
-    - file: docs/020/020workflow18
-    - file: docs/020/020workflow19
-    - file: docs/020/020workflow110
-    - file: docs/020/020workflow111
-    - file: docs/020/020workflow112
-  - file: docs/020/021workflow2
+    - file: docs/02/01workflow11
+    - file: docs/02/01workflow12
+    - file: docs/02/01workflow13
+    - file: docs/02/01workflow14
+    - file: docs/02/01workflow15
+    - file: docs/02/01workflow16
+    - file: docs/02/01workflow17
+    - file: docs/02/01workflow18
+    - file: docs/02/01workflow19
+    - file: docs/02/01workflow110
+    - file: docs/02/01workflow111
+    - file: docs/02/01workflow112
+  - file: docs/02/02workflow2
     sections:
-    - file: docs/020/021workflow21
-    - file: docs/020/021workflow22
-    - file: docs/020/021workflow23
+    - file: docs/02/02workflow21
+    - file: docs/02/02workflow22
+    - file: docs/02/02workflow23
+  - file: docs/02/03_princeton
+    sections:
+    - file: docs/02/03_princeton1
+    - file: docs/02/03_princeton2
 - caption: Sub-Tasks
   numbered: true
   chapters:
-  - file: docs/030/030task1
-  - file: docs/030/031task2
+  - file: docs/03/001task1
+  - file: docs/03/002open_data
     sections:
-    - file: docs/030/031task21
-    - file: docs/030/031task22
-  - file: docs/030/032task3
-  - file: docs/030/033task4
-  - file: docs/030/034task5
-  - file: docs/030/035task6
-  - file: docs/030/036task7
-  - file: docs/030/037task8
-  - file: docs/030/038task9
-  - file: docs/030/039task10
-  - file: docs/030/0310task11
-  - file: docs/030/0311task12
-  - file: docs/030/0312task13
-  - file: docs/030/0313task14
-  - file: docs/030/0314task15
-  - file: docs/030/0315task16
-  - file: docs/030/0316task17
-  - file: docs/030/0317task18
-  - file: docs/030/0318task19
-  - file: docs/030/0319task20
-  - file: docs/030/0320task21
-  - file: docs/030/0321task22
-  - file: docs/030/0322task23
-  - file: docs/030/0323task24
-  - file: docs/030/0324task25
-  - file: docs/030/0325task26
-  - file: docs/030/0326task27
-  - file: docs/030/0327task28
-  - file: docs/030/0328task29
-  - file: docs/030/0329task30
-  - file: docs/030/0330task31
+    - file: docs/03/002open_data1
+    - file: docs/03/002open_data2
+    - file: docs/03/002open_data3
+  - file: docs/03/003vec_lay
+  - file: docs/03/004task4
+  - file: docs/03/005task5
+  - file: docs/03/006task6
+  - file: docs/03/007save
+  - file: docs/03/008task8
+  - file: docs/03/009task9
+  - file: docs/03/010task10
+  - file: docs/03/011task11
+  - file: docs/03/012task12
+  - file: docs/03/013task13
+  - file: docs/03/014task14
+  - file: docs/03/015task15
+  - file: docs/03/016vector
+  - file: docs/03/017categorize
+  - file: docs/03/018task18
+  - file: docs/03/019task19
+  - file: docs/03/020task20
+  - file: docs/03/021task21
+  - file: docs/03/022adv_digi
+  - file: docs/03/023task23
+  - file: docs/03/024task24
+  - file: docs/03/025task25
+  - file: docs/03/026task26
+  - file: docs/03/027task27
+  - file: docs/03/028task28
+  - file: docs/03/029task29
+  - file: docs/03/030task30
+  - file: docs/03/031task31
+  - file: docs/03/032osm
+  - file: docs/03/033plugin
