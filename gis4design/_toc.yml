@@ -6,7 +6,7 @@ parts:
   chapters:
   - file: docs/01/01gis
   - file: docs/01/02crs
-- caption: Tasks
+- caption: Tutorials
   numbered: true
   chapters:
   - file: docs/02/01workflow1
@@ -32,7 +32,7 @@ parts:
     sections:
     - file: docs/02/03_princeton1
     - file: docs/02/03_princeton2
-- caption: Sub-Tasks
+- caption: How-Tos
   numbered: true
   chapters:
   - file: docs/03/001task1
