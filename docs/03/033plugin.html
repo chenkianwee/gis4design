@@ -450,6 +450,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-create-a-new-layer-and-populate-it-with-new-features-and-attributes">33.4. How to create a new layer and populate it with new features and attributes</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submitting-your-plugin-to-qgis-plugin-repository">33.5. Submitting your plugin to QGIS plugin repository</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geopandas-and-laspy">33.6. Geopandas and laspy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resources">33.7. Resources</a></li>
 </ul>
             </nav>
         </div>
@@ -463,55 +464,6 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="developing-qgis-plugin">
 <h1><span class="section-number">33. </span>Developing QGIS Plugin<a class="headerlink" href="#developing-qgis-plugin" title="Link to this heading">#</a></h1>
-<ul class="simple">
-<li><p>QGIS Python API: <a class="reference external" href="https://api.qgis.org/api/annotated.html">https://api.qgis.org/api/annotated.html</a></p></li>
-<li><p>QGIS python tutorials: <a class="reference external" href="https://www.qgistutorials.com/en/docs/3/getting_started_with_pyqgis.html">https://www.qgistutorials.com/en/docs/3/getting_started_with_pyqgis.html</a></p></li>
-<li><p>plugin resources</p>
-<ul>
-<li><p>QGIS documentation: <a class="reference external" href="https://docs.qgis.org/testing/en/docs/pyqgis_developer_cookbook/plugins/index.html">https://docs.qgis.org/testing/en/docs/pyqgis_developer_cookbook/plugins/index.html</a></p></li>
-<li><p>Minimal plugin example: <a class="github reference external" href="https://github.com/wonder-sk/qgis-minimal-plugin">wonder-sk/qgis-minimal-plugin</a></p></li>
-<li><p>QGIS plugin-CI:</p>
-<ul>
-<li><p><a class="reference external" href="https://opengisch.github.io/qgis-plugin-ci/">https://opengisch.github.io/qgis-plugin-ci/</a></p></li>
-<li><p><a class="github reference external" href="https://github.com/opengisch/qgis-plugin-ci/">opengisch/qgis-plugin-ci</a></p></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>plugin tutorials</p>
-<ul>
-<li><p>building a QGIS plugin: <a class="reference external" href="https://www.qgistutorials.com/en/docs/3/building_a_python_plugin.html">https://www.qgistutorials.com/en/docs/3/building_a_python_plugin.html</a></p></li>
-<li><p>building a QGIS processing plugin: <a class="reference external" href="https://www.qgistutorials.com/en/docs/3/processing_python_plugin.html">https://www.qgistutorials.com/en/docs/3/processing_python_plugin.html</a></p></li>
-<li><p>building plugin: <a class="reference external" href="https://training.gismentors.eu/qgis-plugins/build_plugin.html">https://training.gismentors.eu/qgis-plugins/build_plugin.html</a></p></li>
-</ul>
-</li>
-<li><p>plugin examples</p>
-<ul>
-<li><p>gis3d: <a class="github reference external" href="https://github.com/chenkianwee/gis3d">chenkianwee/gis3d</a></p></li>
-<li><p>shortest path processing algorithm: <a class="github reference external" href="https://github.com/root676/QNEAT3/blob/master/algs/ShortestPathBetweenPoints.py">root676/QNEAT3</a></p></li>
-<li><p>cityjson loader: <a class="github reference external" href="https://github.com/cityjson/cityjson-qgis-plugin">cityjson/cityjson-qgis-plugin</a></p></li>
-<li><p>3dcitybuilder: <a class="github reference external" href="https://github.com/arthurRuf/3dcitybuilder">arthurRuf/3dcitybuilder</a></p></li>
-<li><p>third party python library:</p>
-<ul>
-<li><p><a class="reference external" href="https://stackoverflow.com/questions/64043071/using-third-party-python-modules-in-qgis">https://stackoverflow.com/questions/64043071/using-third-party-python-modules-in-qgis</a></p></li>
-<li><p><a class="reference external" href="https://pupuweb.com/how-install-python-packages-qgis-python-plugins/">https://pupuweb.com/how-install-python-packages-qgis-python-plugins/</a></p></li>
-</ul>
-</li>
-<li><p>Multiple layer parameters</p>
-<ul>
-<li><p><a class="reference external" href="https://gis.stackexchange.com/questions/408823/setting-input-to-take-multiple-layers-in-qgis-python-processing-script">https://gis.stackexchange.com/questions/408823/setting-input-to-take-multiple-layers-in-qgis-python-processing-script</a></p></li>
-</ul>
-</li>
-<li><p>Get filepath of parameter layer</p>
-<ul>
-<li><p>tree_info = self.parameterDefinition(self.TREE_HEIGHT).valueAsJsonObject(parameters[self.TREE_HEIGHT], context)
--quickapi example</p></li>
-<li><p><a class="github reference external" href="https://github.com/gis-ops/tutorials/blob/master/qgis/examples/quick_api/quick_api.py">gis-ops/tutorials</a></p></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
 <section id="quickstart-to-develop-a-processing-plugin">
 <h2><span class="section-number">33.1. </span>Quickstart to develop a processing plugin<a class="headerlink" href="#quickstart-to-develop-a-processing-plugin" title="Link to this heading">#</a></h2>
 <ol class="arabic">
@@ -662,6 +614,58 @@ document.write(`
 <li><p>laspy specification: <a class="reference external" href="https://www.asprs.org/wp-content/uploads/2019/03/LAS_1_4_r14.pdf">https://www.asprs.org/wp-content/uploads/2019/03/LAS_1_4_r14.pdf</a></p></li>
 </ul>
 </section>
+<section id="resources">
+<h2><span class="section-number">33.7. </span>Resources<a class="headerlink" href="#resources" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>QGIS Python API: <a class="reference external" href="https://api.qgis.org/api/annotated.html">https://api.qgis.org/api/annotated.html</a></p></li>
+<li><p>QGIS python tutorials: <a class="reference external" href="https://www.qgistutorials.com/en/docs/3/getting_started_with_pyqgis.html">https://www.qgistutorials.com/en/docs/3/getting_started_with_pyqgis.html</a></p></li>
+<li><p>plugin resources</p>
+<ul>
+<li><p>QGIS documentation: <a class="reference external" href="https://docs.qgis.org/testing/en/docs/pyqgis_developer_cookbook/plugins/index.html">https://docs.qgis.org/testing/en/docs/pyqgis_developer_cookbook/plugins/index.html</a></p></li>
+<li><p>Minimal plugin example: <a class="github reference external" href="https://github.com/wonder-sk/qgis-minimal-plugin">wonder-sk/qgis-minimal-plugin</a></p></li>
+<li><p>QGIS plugin-CI:</p>
+<ul>
+<li><p><a class="reference external" href="https://opengisch.github.io/qgis-plugin-ci/">https://opengisch.github.io/qgis-plugin-ci/</a></p></li>
+<li><p><a class="github reference external" href="https://github.com/opengisch/qgis-plugin-ci/">opengisch/qgis-plugin-ci</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>plugin tutorials</p>
+<ul>
+<li><p>building a QGIS plugin: <a class="reference external" href="https://www.qgistutorials.com/en/docs/3/building_a_python_plugin.html">https://www.qgistutorials.com/en/docs/3/building_a_python_plugin.html</a></p></li>
+<li><p>building a QGIS processing plugin: <a class="reference external" href="https://www.qgistutorials.com/en/docs/3/processing_python_plugin.html">https://www.qgistutorials.com/en/docs/3/processing_python_plugin.html</a></p></li>
+<li><p>building plugin: <a class="reference external" href="https://training.gismentors.eu/qgis-plugins/build_plugin.html">https://training.gismentors.eu/qgis-plugins/build_plugin.html</a></p></li>
+</ul>
+</li>
+<li><p>plugin examples</p>
+<ul>
+<li><p>gis3d: <a class="github reference external" href="https://github.com/chenkianwee/gis3d">chenkianwee/gis3d</a></p></li>
+<li><p>shortest path processing algorithm: <a class="github reference external" href="https://github.com/root676/QNEAT3/blob/master/algs/ShortestPathBetweenPoints.py">root676/QNEAT3</a></p></li>
+<li><p>cityjson loader: <a class="github reference external" href="https://github.com/cityjson/cityjson-qgis-plugin">cityjson/cityjson-qgis-plugin</a></p></li>
+<li><p>3dcitybuilder: <a class="github reference external" href="https://github.com/arthurRuf/3dcitybuilder">arthurRuf/3dcitybuilder</a></p></li>
+<li><p>third party python library:</p>
+<ul>
+<li><p><a class="reference external" href="https://stackoverflow.com/questions/64043071/using-third-party-python-modules-in-qgis">https://stackoverflow.com/questions/64043071/using-third-party-python-modules-in-qgis</a></p></li>
+<li><p><a class="reference external" href="https://pupuweb.com/how-install-python-packages-qgis-python-plugins/">https://pupuweb.com/how-install-python-packages-qgis-python-plugins/</a></p></li>
+</ul>
+</li>
+<li><p>Multiple layer parameters</p>
+<ul>
+<li><p><a class="reference external" href="https://gis.stackexchange.com/questions/408823/setting-input-to-take-multiple-layers-in-qgis-python-processing-script">https://gis.stackexchange.com/questions/408823/setting-input-to-take-multiple-layers-in-qgis-python-processing-script</a></p></li>
+</ul>
+</li>
+<li><p>Get filepath of parameter layer</p>
+<ul>
+<li><p>tree_info = self.parameterDefinition(self.TREE_HEIGHT).valueAsJsonObject(parameters[self.TREE_HEIGHT], context)
+-quickapi example</p></li>
+<li><p><a class="github reference external" href="https://github.com/gis-ops/tutorials/blob/master/qgis/examples/quick_api/quick_api.py">gis-ops/tutorials</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -725,6 +729,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-create-a-new-layer-and-populate-it-with-new-features-and-attributes">33.4. How to create a new layer and populate it with new features and attributes</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submitting-your-plugin-to-qgis-plugin-repository">33.5. Submitting your plugin to QGIS plugin repository</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#geopandas-and-laspy">33.6. Geopandas and laspy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resources">33.7. Resources</a></li>
 </ul>
   </nav></div>
 
