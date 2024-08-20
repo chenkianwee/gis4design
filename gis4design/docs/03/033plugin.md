@@ -1,30 +1,4 @@
 # Developing QGIS Plugin
-- QGIS Python API: https://api.qgis.org/api/annotated.html
-- QGIS python tutorials: https://www.qgistutorials.com/en/docs/3/getting_started_with_pyqgis.html
-- plugin resources
-    - QGIS documentation: https://docs.qgis.org/testing/en/docs/pyqgis_developer_cookbook/plugins/index.html
-    - Minimal plugin example: https://github.com/wonder-sk/qgis-minimal-plugin
-    - QGIS plugin-CI: 
-        - https://opengisch.github.io/qgis-plugin-ci/
-        - https://github.com/opengisch/qgis-plugin-ci/
-- plugin tutorials
-    - building a QGIS plugin: https://www.qgistutorials.com/en/docs/3/building_a_python_plugin.html
-    - building a QGIS processing plugin: https://www.qgistutorials.com/en/docs/3/processing_python_plugin.html
-    - building plugin: https://training.gismentors.eu/qgis-plugins/build_plugin.html
-- plugin examples
-    - gis3d: https://github.com/chenkianwee/gis3d
-    - shortest path processing algorithm: https://github.com/root676/QNEAT3/blob/master/algs/ShortestPathBetweenPoints.py
-    - cityjson loader: https://github.com/cityjson/cityjson-qgis-plugin
-    - 3dcitybuilder: https://github.com/arthurRuf/3dcitybuilder
-    - third party python library: 
-        - https://stackoverflow.com/questions/64043071/using-third-party-python-modules-in-qgis
-        - https://pupuweb.com/how-install-python-packages-qgis-python-plugins/
-    - Multiple layer parameters
-        - https://gis.stackexchange.com/questions/408823/setting-input-to-take-multiple-layers-in-qgis-python-processing-script
-    - Get filepath of parameter layer
-        - tree_info = self.parameterDefinition(self.TREE_HEIGHT).valueAsJsonObject(parameters[self.TREE_HEIGHT], context)
-    -quickapi example
-        - https://github.com/gis-ops/tutorials/blob/master/qgis/examples/quick_api/quick_api.py
 
 ## Quickstart to develop a processing plugin
 1. Create a plugin template with the QGIS plugin "Plugin Builder". We will create a processing plugin, where I am just going to use the default GUI given by QGIS to develop the plugin. The plugin will appear in Processing -> Toolbox -> gis3d
@@ -150,3 +124,32 @@ def processAlgorithm(self, parameters, context, feedback):
 ## Geopandas and laspy
 - read and write files with geopandas: https://geopandas.org/en/stable/docs/user_guide/io.html#reading-and-writing-files
 - laspy specification: https://www.asprs.org/wp-content/uploads/2019/03/LAS_1_4_r14.pdf
+
+## Resources
+
+- QGIS Python API: https://api.qgis.org/api/annotated.html
+- QGIS python tutorials: https://www.qgistutorials.com/en/docs/3/getting_started_with_pyqgis.html
+- plugin resources
+    - QGIS documentation: https://docs.qgis.org/testing/en/docs/pyqgis_developer_cookbook/plugins/index.html
+    - Minimal plugin example: https://github.com/wonder-sk/qgis-minimal-plugin
+    - QGIS plugin-CI: 
+        - https://opengisch.github.io/qgis-plugin-ci/
+        - https://github.com/opengisch/qgis-plugin-ci/
+- plugin tutorials
+    - building a QGIS plugin: https://www.qgistutorials.com/en/docs/3/building_a_python_plugin.html
+    - building a QGIS processing plugin: https://www.qgistutorials.com/en/docs/3/processing_python_plugin.html
+    - building plugin: https://training.gismentors.eu/qgis-plugins/build_plugin.html
+- plugin examples
+    - gis3d: https://github.com/chenkianwee/gis3d
+    - shortest path processing algorithm: https://github.com/root676/QNEAT3/blob/master/algs/ShortestPathBetweenPoints.py
+    - cityjson loader: https://github.com/cityjson/cityjson-qgis-plugin
+    - 3dcitybuilder: https://github.com/arthurRuf/3dcitybuilder
+    - third party python library: 
+        - https://stackoverflow.com/questions/64043071/using-third-party-python-modules-in-qgis
+        - https://pupuweb.com/how-install-python-packages-qgis-python-plugins/
+    - Multiple layer parameters
+        - https://gis.stackexchange.com/questions/408823/setting-input-to-take-multiple-layers-in-qgis-python-processing-script
+    - Get filepath of parameter layer
+        - tree_info = self.parameterDefinition(self.TREE_HEIGHT).valueAsJsonObject(parameters[self.TREE_HEIGHT], context)
+    -quickapi example
+        - https://github.com/gis-ops/tutorials/blob/master/qgis/examples/quick_api/quick_api.py
