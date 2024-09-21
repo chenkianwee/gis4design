@@ -18,7 +18,8 @@
     pip install numpy
     ```
 
-## Installing third-party python library for the gis3d plugin in Ubuntu
+## Installing third-party python library for the gis3d plugin
+### Installing in Ubuntu
 1. refer to installing third party library in [ubuntu](#installing-third-party-python-library-in-ubuntu). Install the following library for the gis3d plugin.
     ```
     pip install geomie3d==0.0.9
@@ -28,3 +29,5 @@
     pip install lazrs==0.6.1
     pip install shapely==2.0.6
     ```
+### Installing in Windows
+---- work in progress -----
