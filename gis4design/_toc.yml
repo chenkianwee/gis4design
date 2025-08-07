@@ -72,3 +72,4 @@ parts:
   - file: docs/03/031task31
   - file: docs/03/032osm
   - file: docs/03/033plugin
+  - file: docs/03/034python

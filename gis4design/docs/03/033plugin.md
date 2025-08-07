@@ -121,6 +121,8 @@ def processAlgorithm(self, parameters, context, feedback):
 - create local respository: https://training.gismentors.eu/qgis-plugins/publish_plugin.html
     - alternatively you can consider setting up a local repository
 
+- guidelines: https://plugins.qgis.org/publish/
+
 ## Geopandas and laspy
 - read and write files with geopandas: https://geopandas.org/en/stable/docs/user_guide/io.html#reading-and-writing-files
 - laspy specification: https://www.asprs.org/wp-content/uploads/2019/03/LAS_1_4_r14.pdf
