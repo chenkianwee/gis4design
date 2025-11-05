@@ -1,6 +1,6 @@
 # Search for Building Footprint
 
-1. Search for building footprint at <a href="https://www.opendataphilly.org/" target="_blank">OpenDataPhilly</a>. Search for "building footprint". This is very similar to Task-2b ({doc}`../03/002open_data2`). Download the shapefile. Unzip the file.
+1. Search for building footprint at <a href="https://www.opendataphilly.org/" target="_blank">OpenDataPhilly</a>. Search for "building footprint". This is very similar to Task-2b ([](../03/002open_data2)). Download the shapefile. Unzip the file.
 
     <br/><br/>
     ```{image} ../../_static/020workflow18/img1.png
@@ -9,7 +9,7 @@
     ```
     <br/><br/>
 
-2. Import the shapefile into QGIS ({doc}`../03/003vec_lay`). Reproject the Shapefile into the right CRS ({doc}`../03/028task28`). Choose the Footprint of interest ("{doc}`01workflow13`, Steps 1-5).
+2. Import the shapefile into QGIS ([](../03/003vec_lay)). Reproject the Shapefile into the right CRS ([](../03/028task28)). Choose the Footprint of interest ([](01workflow13), Steps 1-5).
 
     <br/><br/>
     ```{image} ../../_static/020workflow18/img2.png

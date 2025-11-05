@@ -15,12 +15,12 @@
     :width: 100%
     :align: center
     ```
-4. Define the radius of interest from this point ({doc}`../03/024task24`), 3KM. Adjust the transparency of the layer ({doc}`../03/008task8`). [Save the layer as a .gpkg file](../03/007save.md) and remove the temporary layer.
+4. Define the radius of interest from this point ([](../03/024task24)), 3KM. Adjust the transparency of the layer ([](../03/008task8)). [Save the layer as a .gpkg file](../03/007save.md) and remove the temporary layer.
     ```{image} ../../_static/princeton/princeton4.png
     :width: 100%
     :align: center
     ```
-5. Grab data from OSM ({doc}`../03/032osm`). Remember to convert the multiparts layer to single parts. You can merge all the path layers together into one. Then save all the layers converting their Projected CRS to EPSG 32111. 
+5. Grab data from OSM ([](../03/032osm)). Remember to convert the multiparts layer to single parts. You can merge all the path layers together into one. Then save all the layers converting their Projected CRS to EPSG 32111. 
     ```{image} ../../_static/princeton/princeton7.png
     :width: 100%
     :align: center
@@ -41,7 +41,7 @@
     lng = -74.65880323282136
     ```
 
-8. Download the New Jersey DEM data ({doc}`../03/002open_data3`). It is a huge dataset make sure you at least have 30gb of storage. 
+8. Download the New Jersey DEM data ([](../03/002open_data3)). It is a huge dataset make sure you at least have 30gb of storage. 
     - Once imported into QGIS, clip it with the buffer area. You can do this by right clicking on the layer -> export -> Save As ... In the dialog box clip the area with the "buffer_area" layer.
     ```{image} ../../_static/princeton/princeton9.png
     :width: 50%

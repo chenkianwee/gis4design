@@ -1,6 +1,6 @@
 # Land Use Map
 
-1. Download the "Master Plan 2014 Planning Area Boundary". Refer to ({doc}`../03/002open_data1`), instead of searching for the Master Plan, search for the planning area boundary. Import the map into QGIS.
+1. Download the "Master Plan 2014 Planning Area Boundary". Refer to ([](../03/002open_data1)), instead of searching for the Master Plan, search for the planning area boundary. Import the map into QGIS.
 
     <br/><br/>
     ```{image} ../../_static/021workflow23/img1.png
@@ -9,7 +9,7 @@
     ```
     <br/><br/>
 
-2. Import the file into QGIS ({doc}`../03/003vec_lay`).
+2. Import the file into QGIS ([](../03/003vec_lay)).
 
     <br/><br/>
     ```{image} ../../_static/021workflow23/img2.png
@@ -18,7 +18,7 @@
     ```
     <br/><br/>
 
-3. Choose the surrounding planning area polygons. Merge these polygons ({doc}`../03/006task6`). And save the merged file as a new Shapefile ({doc}`../03/007save`).
+3. Choose the surrounding planning area polygons. Merge these polygons ([](../03/006task6)). And save the merged file as a new Shapefile ([](../03/007save)).
 
     <br/><br/>
     ```{image} ../../_static/021workflow23/img3.png
@@ -36,7 +36,7 @@
     ```
     <br/><br/>
 
-5. Using the merged boundary layer. Clipped the Master Plan Landuse layer ({doc}`../03/016vector`). As we are only interested in analysing the land use around our site.
+5. Using the merged boundary layer. Clipped the Master Plan Landuse layer ([](../03/016vector)). As we are only interested in analysing the land use around our site.
 
     <br/><br/>
     ```{image} ../../_static/021workflow23/img5.png
@@ -45,7 +45,7 @@
     ```
     <br/><br/>
 
-6. Using the merged boundary layer. Clipped the Master Plan Landuse layer ({doc}`../03/016vector`). As we are only interested in analysing the land use around our site.
+6. Using the merged boundary layer. Clipped the Master Plan Landuse layer ([](../03/016vector)). As we are only interested in analysing the land use around our site.
 
     <br/><br/>
     ```{image} ../../_static/021workflow23/img6.png
@@ -54,7 +54,7 @@
     ```
     <br/><br/>
 
-7. Compose the map with layout manager and export it as an image ({doc}`../03/018task18`).
+7. Compose the map with layout manager and export it as an image ([](../03/018task18)).
 
     <br/><br/>
     ```{image} ../../_static/021workflow23/img7.png

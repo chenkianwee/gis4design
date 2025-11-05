@@ -1,8 +1,8 @@
 # Projecting the Maps: From Lat/Lon to Metres
 
-In order to perform spatial analysis (intersection & unions) on the maps, we need to project it from Lat/Lon into metres. Refer to {doc}`../01/02crs` for explanation of Coordinate Reference System (CRS) and projections.
+In order to perform spatial analysis (intersection & unions) on the maps, we need to project it from Lat/Lon into metres. Refer to [](../01/02crs) for explanation of Coordinate Reference System (CRS) and projections.
 
-1. Reproject both the site and Land_Use layer ({doc}`../03/028task28`). The Land_Use layer will take longer as the layer has much more information.
+1. Reproject both the site and Land_Use layer ([](../03/028task28)). The Land_Use layer will take longer as the layer has much more information.
 
     <br/><br/>
     ```{image} ../../_static/020workflow12/img1.png

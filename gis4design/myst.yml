@@ -1,0 +1,86 @@
+version: 1
+project:
+  title: Geographic Information System for Design (GIS4Design)
+  authors:
+    - name: Kian Wee Chen
+  copyright: '2021'
+  github: chenkianwee/gis4design
+  exports:
+    - format: pdf
+      template: plain_latex_book
+      output: exports/book.pdf
+  toc:
+    - file: docs/intro.md
+    - title: Concepts
+      children:
+        - file: docs/01/01gis.md
+        - file: docs/01/02crs.md
+    - title: Tutorials
+      children:
+        - file: docs/02/01workflow1.md
+          children:
+            - file: docs/02/01workflow11.md
+            - file: docs/02/01workflow12.md
+            - file: docs/02/01workflow13.md
+            - file: docs/02/01workflow14.md
+            - file: docs/02/01workflow15.md
+            - file: docs/02/01workflow16.md
+            - file: docs/02/01workflow17.md
+            - file: docs/02/01workflow18.md
+            - file: docs/02/01workflow19.md
+            - file: docs/02/01workflow110.md
+            - file: docs/02/01workflow111.md
+            - file: docs/02/01workflow112.md
+        - file: docs/02/02workflow2.md
+          children:
+            - file: docs/02/02workflow21.md
+            - file: docs/02/02workflow22.md
+            - file: docs/02/02workflow23.md
+        - file: docs/02/03_princeton.md
+          children:
+            - file: docs/02/03_princeton1.md
+            - file: docs/02/03_princeton2.md
+    - title: How-Tos
+      children:
+        - file: docs/03/001task1.md
+        - file: docs/03/002open_data.md
+          children:
+            - file: docs/03/002open_data1.md
+            - file: docs/03/002open_data2.md
+            - file: docs/03/002open_data3.md
+        - file: docs/03/003vec_lay.md
+        - file: docs/03/004task4.md
+        - file: docs/03/005task5.md
+        - file: docs/03/006task6.md
+        - file: docs/03/007save.md
+        - file: docs/03/008task8.md
+        - file: docs/03/009task9.md
+        - file: docs/03/010task10.md
+        - file: docs/03/011task11.md
+        - file: docs/03/012task12.md
+        - file: docs/03/013task13.md
+        - file: docs/03/014task14.md
+        - file: docs/03/015task15.md
+        - file: docs/03/016vector.md
+        - file: docs/03/017categorize.md
+        - file: docs/03/018task18.md
+        - file: docs/03/019task19.md
+        - file: docs/03/020task20.md
+        - file: docs/03/021task21.md
+        - file: docs/03/022adv_digi.md
+        - file: docs/03/023task23.md
+        - file: docs/03/024task24.md
+        - file: docs/03/025task25.md
+        - file: docs/03/026task26.md
+        - file: docs/03/027task27.md
+        - file: docs/03/028task28.md
+        - file: docs/03/029task29.md
+        - file: docs/03/030task30.md
+        - file: docs/03/031task31.md
+        - file: docs/03/032osm.md
+        - file: docs/03/033plugin.md
+        - file: docs/03/034python.md
+site:
+  options:
+    folders: true
+  template: book-theme

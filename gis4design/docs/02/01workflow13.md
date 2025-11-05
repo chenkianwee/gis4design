@@ -38,7 +38,7 @@ In this exercise we will manipulate the Land Use layer to get a Land Use map aro
     ```
     <br/><br/>
 
-5. Export the selected features into a separate layer ({doc}`../03/007save`).  Make sure you tick the "Save only selected features" parameter. It will take some time as it is a big file.
+5. Export the selected features into a separate layer ([](../03/007save)).  Make sure you tick the "Save only selected features" parameter. It will take some time as it is a big file.
 
     <br/><br/>
     ```{image} ../../_static/020workflow13/img5.png
@@ -110,7 +110,7 @@ In this exercise we will manipulate the Land Use layer to get a Land Use map aro
     ```
     <br/><br/>
 
-13. Now we can categorise the map ({doc}`../03/017categorize`).
+13. Now we can categorise the map ([](../03/017categorize)).
 
     <br/><br/>
     ```{image} ../../_static/020workflow13/img13.png
@@ -119,7 +119,7 @@ In this exercise we will manipulate the Land Use layer to get a Land Use map aro
     ```
     <br/><br/>
 
-14. You can then compose the map with layout manager ({doc}`../03/018task18`) and export it as an image.
+14. You can then compose the map with layout manager ([](../03/018task18)) and export it as an image.
 
     <br/><br/>
     ```{image} ../../_static/020workflow13/img14.png
@@ -128,7 +128,7 @@ In this exercise we will manipulate the Land Use layer to get a Land Use map aro
     ```
     <br/><br/>
 
-15. For a more precise map of strictly 800m radius from the site. We can clip the shapes. First, calculate the centroid of our site ({doc}`../03/023task23`). Then using the centroid draw a circle ({doc}`../03/024task24`). Using the circle drawn clip the Land Use layer ({doc}`../03/016vector`). If the Clip operation fails, go to ({doc}`../03/025task25`) and turn off The result of the clip is shown below. Repeat step 13 to 14 to get the Landuse map.
+15. For a more precise map of strictly 800m radius from the site. We can clip the shapes. First, calculate the centroid of our site ([](../03/023task23)). Then using the centroid draw a circle ([](../03/024task24)). Using the circle drawn clip the Land Use layer ([](../03/016vector)). If the Clip operation fails, go to ([](../03/025task25)) and turn off The result of the clip is shown below. Repeat step 13 to 14 to get the Landuse map.
 
     <br/><br/>
     ```{image} ../../_static/020workflow13/img15.png

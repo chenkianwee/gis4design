@@ -1,6 +1,6 @@
 # Import Vector (Shapefiles) into Rhino
 
-1. In QGIS, export the shapefile to a excel spreadsheet ({doc}`../03/007save`). Change the format to "MS Office Open XML spreadsheet [XLSX]". Click "OK".
+1. In QGIS, export the shapefile to a excel spreadsheet ([](../03/007save)). Change the format to "MS Office Open XML spreadsheet [XLSX]". Click "OK".
 
     <br/><br/>
     ```{image} ../../_static/020workflow111/img1.png

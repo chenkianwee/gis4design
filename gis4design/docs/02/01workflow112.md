@@ -1,6 +1,6 @@
 # Extrude Building Footprint Based on DEM and LiDAR Point Cloud
 
-1. Import the DEM as XYZ file. Then type in the command "PointCloud" to turn the DEM points into point clouds. The processing will be faster ({doc}`01workflow110`).
+1. Import the DEM as XYZ file. Then type in the command "PointCloud" to turn the DEM points into point clouds. The processing will be faster ([](01workflow110)).
 
     <br/><br/>
     ```{image} ../../_static/020workflow112/img1.png
@@ -9,7 +9,7 @@
     ```
     <br/><br/>
 
-2. Import the LiDAR point cloud ({doc}`01workflow19`).
+2. Import the LiDAR point cloud ([](01workflow19)).
 
     <br/><br/>
     ```{image} ../../_static/020workflow112/img2.png
@@ -27,7 +27,7 @@
     ```
     <br/><br/>
 
-4. Right click on the first ID node. Then choose the LiDAR point cloud in Rhino window. Do it with the second ID node but with the DEM point cloud. Lastly, specify the building footprint shapefile ({doc}`01workflow111`).
+4. Right click on the first ID node. Then choose the LiDAR point cloud in Rhino window. Do it with the second ID node but with the DEM point cloud. Lastly, specify the building footprint shapefile ([](01workflow111)).
 
     <br/><br/>
     ```{image} ../../_static/020workflow112/img4.png

@@ -29,7 +29,7 @@
     ```
     <br/><br/>
 
-5. Import the .tif file into QGIS ({doc}`../03/026task26`).
+5. Import the .tif file into QGIS ([](../03/026task26)).
 
     <br/><br/>
     ```{image} ../../_static/020workflow17/img4.png
@@ -38,9 +38,9 @@
     ```
     <br/><br/>
 
-6. Lets reproject the raster image to the right CRS. Follow the steps in the exercise "{doc}`01workflow12`" Step 1-6.
+6. Lets reproject the raster image to the right CRS. Follow the steps in the exercise "[](01workflow12)" Step 1-6.
 
-7. Clip the raster image to only show the our extent of interest ({doc}`../03/019task19`). Use the circle drawn in the exercise "Land Use Map" Step 15 to clip it.
+7. Clip the raster image to only show the our extent of interest ([](../03/019task19)). Use the circle drawn in the exercise "Land Use Map" Step 15 to clip it.
 
     <br/><br/>
     ```{image} ../../_static/020workflow17/img5.png

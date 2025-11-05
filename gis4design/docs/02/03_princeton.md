@@ -13,5 +13,5 @@ Find the following maps to understand the existing conditions
     
 ## Setup QGIS environment
 1. Install the following plugins if you have not, to make following the exercise easier. 
-2. Install the "QuickMapServices" plugin to load either OpenStreetMap or Google Maps onto the canvas {doc}`../03/001task1`.
-3. Install the "OSM place search" plugin to make searching for location easier {doc}`../03/032osm`
+2. Install the "QuickMapServices" plugin to load either OpenStreetMap or Google Maps onto the canvas [](../03/001task1).
+3. Install the "OSM place search" plugin to make searching for location easier [](../03/032osm)

@@ -2,7 +2,7 @@
 
 1. You can switched on the "Advanced Digitizing Toolbar" and "Shape Digitizing Toolbar" by right-clicking on the top toolbar and enabling them with the dropdown menu.
 
-2. Create a new polygon layer. You can choose which layer format to be a shapefile, temporary etc. Look at {doc}`010task10`, Step 1-4 for more information.
+2. Create a new polygon layer. You can choose which layer format to be a shapefile, temporary etc. Look at [](010task10), Step 1-4 for more information.
     ```{image} ../../_static/0321task22/img1.png
     :width: 100%
     :align: center
